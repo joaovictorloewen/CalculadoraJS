@@ -18,7 +18,7 @@ function trocarSinal() {
     let display = document.getElementById("display");
     let valor = display.value;
 
-    if (valor !== "") {
+    if (valor !== "" && valor !== '0') {
         if (valor.startsWith("-")) {
             display.value = valor.substring(1);
         } else {
